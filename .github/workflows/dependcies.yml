@@ -23,7 +23,7 @@ jobs:
   print-name:
     name: Print Name
     runs-on: ubuntu-latest
-    needs: generate-name  # This job depends on 'generate-name'
+    needs: generate-name  
 
     steps:
       - name: Get and Print the Name
