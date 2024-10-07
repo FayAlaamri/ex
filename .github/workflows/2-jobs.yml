@@ -1,0 +1,19 @@
+name: Two Jobs Workflow
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Job 1 Name
+        run: echo "This is Job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Job 2 Name
+        run: echo "This is Job 2"
